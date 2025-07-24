@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header style */
+.text-gray{
+    color: #252432;
+}
+
+.text-light-gray{
+    color: #8987A1;
+}
+
+.text-Primary{
+    color: #E95A08;
+}
+
+.logo{
+    width: 135px;
+    height: 82px;
+}
+
+/* shared styles */
+.display-flex{
+    display: flex;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.nav-links{
+
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 48px;
+}
+
+.nav-link{
+    display: flex; 
+    align-items: center; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-item.no-margin{
+    margin-right: 0;
+}
+
+.nav-link img{
+    height: 24px;
+    width: 24px;
+    margin-right: 8px;
+}
+
+.navbar, .banner{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* style for banner */
+.banner .banner-title{
+    font-size: 4.0625rem; 
+    font-weight: bold;
+}
+
+.banner{
+
+    width: 1140px;
+    height: 461px;
+    align-items: flex-end;
+    margin-top: 114.5px;
+}
+
+.banner-description{
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 13px;
+    margin-bottom: 0;
+} 
+
+
+
+
+/* responsive media for mobile */
+@media screen and (max-width: 576px) {
+  .navbar {
+    width: 361px;
+    height: 38px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo{
+    width: 63px;
+    height: 38px;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-item.no-margin {
+    display: block;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 28px 0px 0px 0px; 
+  }
+
+  .banner-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner .banner-title {
+    font-size: 1.5rem; 
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner-description {
+    font-size: 0.875rem;
+    margin-top: 13px; 
+    width: 360px;
+    height: 68px;
+    margin: 13px 0 0 0;  
+    padding: 0;          
+  }
+
+  .banner-text{
+    width: 361px;
+    height: 147px;
+    margin: 28px 32px 0px 0px;
+  } 
+
+}
