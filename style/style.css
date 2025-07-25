@@ -710,11 +710,15 @@ main{
 
   .footer-left p {
     font-size: 1rem; 
-    color: rgba(0, 0, 0, 0.7); 
     text-align:start; 
     align-items: start;
     margin-bottom: 0;
   }
+
+   .footer-left img{
+    width: 180px;
+    height: 109px;
+   }
 
   .footer-right {
     width: 100%;
