@@ -32,6 +32,10 @@
     color: #E95A08;
 }
 
+body{
+  background-color: #F5F8FF;
+}
+
 .logo{
     width: 135px;
     height: 82px;
@@ -194,6 +198,126 @@ main{
   filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.50));
 }
 
+#trusted-badge:hover{
+  transform: rotate(180deg);
+}
+
+/* Style for deals section */
+.deals-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.deals-description h1{
+  font-weight: bold;
+  font-size: 3.125rem;
+  text-align: center;
+  margin-top: 133.87px;
+  margin-bottom: 0;
+}
+
+.deals-description p{
+  font-weight: 400;
+  font-size: 1.375rem;
+  text-align: center;
+  margin-top: 16px;
+  width: 888px;
+  height: 54px;
+  align-items: center;
+}
+
+.deals-container{
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* row-gap: 28px;       */
+    /* column-gap: 25px;  */
+}
+
+.deal-card{
+   display: flex;
+
+}
+
+#bloom{
+  margin-bottom: 22px;
+  width: 367px;
+  height: 201px;
+}
+
+#bloom,#ana{
+  margin-right: 22px;
+  border-radius: 20px;
+  filter: brightness(50%);
+}
+
+#ana{
+  width: 367px;
+  height: 197px;
+}
+
+#zabo{
+  height:423.13px;
+  width: 753px;
+  border-radius: 20px;
+  filter: brightness(50%);
+}
+
+
+.flower-1 {
+    position: relative;
+    text-align: center; 
+}
+
+#deal-text-1, #deal-text-2 {
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 1.25rem;
+    color: white; 
+    font-weight: bold;
+}
+
+#shop-btn-1, #shop-btn-2 {
+    position: absolute;
+    top: 45%;  
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 19px;
+}
+#deal-text-3{
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    color: white; 
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+#shop-btn-3{
+    font-size: 1.75rem;
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+
+#deal-text-1, #deal-text-2,#shop-btn-1, #shop-btn-2{
+  width: 270px;
+  height: 77px;
+}
+
 /* responsive media for mobile */
 @media screen and (max-width: 576px) {
   .navbar {
@@ -327,8 +451,10 @@ main{
 
   .plants-lover-description{
     margin-top: 18px;
-    margin-left: 16px;
-    margin-right: 16px;
+    width: 365px;
+    height: 396px;
+    /* margin-left: 16px; */
+     /* margin-right: 16px;  */
   }
   .plants-lover-description ul {
     padding-left: 30px;
@@ -338,5 +464,55 @@ main{
   .plants-lover-description ul li{
     font-size: 0.875rem;
   }
+
+  .deals-picture{
+    flex-direction: column; 
+    align-items: center;     
+  }
+
+#bloom, #ana, #zabo{
+  width: 361px;
+  height: 184.5px;
+}
+
+#bloom, #ana{
+  margin-left: 20px;
+}
+
+#ana{
+  margin-bottom: 15.5px;
+  border-radius: 0;
+}
+
+.deals-description h1{
+  width: 393px;
+  height: 33px;
+  margin-top: 50px;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.deals-description p{
+  width: 336px;
+  height: 68px;
+  font-size: 0.875rem;
+}
+
+.deals-description{
+    margin-bottom: 46.94px;
+}
+
+#deal-text-1,#deal-text-2,#deal-text-3{
+  font-size: 1.25rem;
+}
+
+#deal-text-3,#shop-btn-3{
+  width: 270px;
+  height: 77px;
+}
+
+#shop-btn-1,#shop-btn-2,#shop-btn-3{
+  font-size: 1rem;
+}
 
 }
