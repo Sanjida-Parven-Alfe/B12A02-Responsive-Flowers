@@ -74,7 +74,7 @@ body{
     margin-right: 8px;
 }
 
-.navbar, .banner, main{
+.navbar, .banner, .our-plants, .Plants-Lover, .latest-deals{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -228,13 +228,6 @@ main{
   align-items: center;
 }
 
-.deals-container{
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* row-gap: 28px;       */
-    /* column-gap: 25px;  */
-}
-
 .deal-card{
    display: flex;
 
@@ -298,7 +291,7 @@ main{
     transform: translateX(-50%); 
     color: white; 
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 #shop-btn-3{
     font-size: 1.75rem;
@@ -317,6 +310,75 @@ main{
   width: 270px;
   height: 77px;
 }
+
+/* Style for join section */
+.join {
+    position: relative;
+    width: 100%;
+    height: 533px;  
+}
+
+.join div img {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
+}
+
+.join-inner {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    text-align: center;
+    color: white;
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+}
+
+.join-inner h1 {
+    font-size: 3.125rem; 
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+.join-inner .inputs-container {
+    display: flex; 
+    gap: 0px; 
+    justify-content: center; 
+}
+
+.join-inner input[type="email"] {
+    padding: 12px;
+    width: 300px;
+    font-size: 1rem;
+    border: none;
+    margin-right: 0;
+    width: 644px;
+    height: 26px;
+}
+
+.join-inner input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #E95A08;  
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 0; 
+    width: 186px;
+    height: 50px;
+}
+
+
+
+
+
+
+
 
 /* responsive media for mobile */
 @media screen and (max-width: 576px) {
@@ -368,9 +430,9 @@ main{
   }
 
   .banner-text {
-    width: 100%;  /* fix width বাদ */
-    height: auto; /* height auto */
-    margin: 1rem 0; /* side margin দরকার নেই */
+    width: 100%;  
+    height: auto; 
+    margin: 1rem 0; 
   }
 
   .our-plants {
@@ -424,8 +486,6 @@ main{
     margin-top: 41.5px;
     margin-right: 12px;
     margin-left: 12px;
-
-    /* text-align: center; */
   }
 
   .Plants-Lover h3{
@@ -453,8 +513,6 @@ main{
     margin-top: 18px;
     width: 365px;
     height: 396px;
-    /* margin-left: 16px; */
-     /* margin-right: 16px;  */
   }
   .plants-lover-description ul {
     padding-left: 30px;
@@ -514,5 +572,26 @@ main{
 #shop-btn-1,#shop-btn-2,#shop-btn-3{
   font-size: 1rem;
 }
+
+ .join {
+        height: 276px; 
+        margin-top: 44px;
+    }
+.join div img{
+        object-fit: cover; 
+        height: 100%; 
+}
+    .join-inner h1 {
+        font-size: 1.25rem;
+    }
+
+    .join-inner input[type="email"]{
+        width: 218px; 
+        height: 21px; 
+    }
+     .join-inner input[type="submit"] {
+        width: 103px; 
+        height: 45px;
+    }
 
 }
